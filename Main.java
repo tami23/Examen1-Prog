@@ -32,6 +32,9 @@ public class Main {
             if (pcrClinico.get(j) > pcrLaFe.get(j)) {
                 System.out.print("  --> El Clinico hace mas PCR");
             }
+            if (pcrClinico == pcrLaFe) {
+                System.out.print("  --> Los dos han hecho las mismas PCR");
+            }
         }
         // analisis de datos de la Fe
         mediaLaFe = sumaLaFe / DIAS;
