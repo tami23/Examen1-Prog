@@ -1,13 +1,11 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
         // declaracion de variables
-        Random aleatorio = new Random();
-        final int DIAS = 15;
+        final int DIAS = 15, MIN = 100, MAX = 2500;
         int sumaLaFe = 0, sumaClinico = 0;
         double mediaLaFe, mediaClinico;
         int nPcrLaFe, nPcrClinico;
@@ -16,10 +14,10 @@ public class Main {
         Map<Integer, Integer> pcrClinico = new HashMap<>();
         // Relleno HashMap
         for (int i = 1; i <= DIAS; i++) {
-            nPcrLaFe = 100 + aleatorio.nextInt(2400);
+            nPcrLaFe = (int) (Math.random() * (MIN - MAX)) + MAX;
             pcrLaFe.put(i, nPcrLaFe);
             sumaLaFe = sumaLaFe + nPcrLaFe;
-            nPcrClinico = 100 + aleatorio.nextInt(2400);
+            nPcrClinico = (int) (Math.random() * (MIN - MAX)) + MAX;
             pcrClinico.put(i, nPcrClinico);
             sumaClinico = sumaClinico + nPcrClinico;
 
