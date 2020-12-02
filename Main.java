@@ -23,19 +23,19 @@ public class Main {
 
             // imprimo HashMap y quien ha hecho mas PCRs
         }
-        System.out.print("Dia      LaFe        Clinico");
+        System.out.print("Dia\tLaFe\tClinico");
         for (int j = 1; j <= DIAS; j++) {
             numPcrFe = pcrLaFe.get(j);
             numPcrCli = pcrClinico.get(j);
-            System.out.print("\n" + j + "     " + numPcrFe + "        " + numPcrCli);
+            System.out.print("\n" + j + "\t" + numPcrFe + "\t" + numPcrCli);
             if (numPcrFe > numPcrCli) {
-                System.out.print("  --> Se hacen mas PCR en La Fe");
+                System.out.print("\t--> Se hacen mas PCR en La Fe");
             }
             if (numPcrCli > numPcrFe) {
-                System.out.print("  --> El Clinico hace mas PCR");
+                System.out.print("\t--> El Clinico hace mas PCR");
             }
             if (numPcrCli == numPcrFe) {
-                System.out.print("  --> Los dos han hecho las mismas PCR");
+                System.out.print("\t--> Los dos han hecho las mismas PCR");
             }
         }
         // analisis de datos de la Fe
@@ -43,11 +43,11 @@ public class Main {
         System.out.println("\n\nANALISIS de datos en La Fe: ");
         System.out.println("Media de PCR por dia: " + mediaLaFe);
 
-        System.out.println("\nDia(PCRs)      Cantidad de PCRs por encima de la media");
+        System.out.println("\nDia(PCRs) \t Cantidad de PCRs por encima de la media");
         for (int k = 1; k <= DIAS; k++) {
             numPcrFe = pcrLaFe.get(k);
             if (numPcrFe > mediaLaFe) {
-                System.out.print("\n" + k + " (" + numPcrFe + ")      " + (numPcrFe - mediaLaFe));
+                System.out.print("\n" + k + " (" + numPcrFe + ")\t" + (numPcrFe - mediaLaFe));
             }
         }
         // analisis de datos del clinico
@@ -55,11 +55,11 @@ public class Main {
         System.out.println("\n\nANALISIS de datos en el Clinico: ");
         System.out.println("Media de PCR por dia: " + mediaClinico);
 
-        System.out.println("\nDia(PCRs)      Cantidad de PCRs por encima de la media");
+        System.out.println("\nDia(PCRs) \t Cantidad de PCRs por encima de la media");
         for (int m = 1; m <= DIAS; m++) {
             numPcrCli = pcrClinico.get(m);
             if (numPcrCli > mediaClinico) {
-                System.out.print("\n" + m + " (" + numPcrCli + ")      " + (numPcrCli - mediaClinico));
+                System.out.print("\n" + m + " (" + numPcrCli + ")\t" + (numPcrCli - mediaClinico));
             }
         }
 
