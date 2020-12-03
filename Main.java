@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         // declaracion de variables
         final int DIAS = 15, MIN = 100, MAX = 2500;
-        int sumaLaFe = 0, sumaClinico = 0;
+        double sumaLaFe = 0.00, sumaClinico = 0.00;
         double mediaLaFe, mediaClinico;
         int nPcrLaFe, numPcrFe, nPcrClinico, numPcrCli;
 
@@ -62,6 +62,5 @@ public class Main {
                 System.out.print("\n" + m + " (" + numPcrCli + ")\t" + (numPcrCli - mediaClinico));
             }
         }
-
     }
 }
