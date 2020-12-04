@@ -1,7 +1,7 @@
 # EXAMEN PROGRAMACION - 1ª Evaluación
 
 
-**1. (4.5  puntos) Programa  que genera,  de  forma  aleatoria,  y almacena la  cantidad  de  PCRs  realizadas  en los hospitales La  Fe  y  Clínico durante  15  días.
+**1. Programa  que genera,  de  forma  aleatoria,  y almacena la  cantidad  de  PCRs  realizadas  en los hospitales La  Fe  y  Clínico durante  15  días.
 Los  valores  deben  estar  comprendidos entre 100 y 2500.** 
 
 El programa debe calcular y mostrar:
@@ -50,5 +50,5 @@ Por ejemplo
     14 (2056)       688,6
 
 
-**2. (1 punto) Elige la estructura de datos más adecuada para la información pedida. Incluye control de excepciones y  mensaje  de  aviso  al  usuario.  
+**2. Elige la estructura de datos más adecuada para la información pedida. Incluye control de excepciones y  mensaje  de  aviso  al  usuario.  
 El código debe  ser  lo  más eficiente posible  y así  como  nombres  de variables autoexplicativas.**
